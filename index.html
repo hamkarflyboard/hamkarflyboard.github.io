@@ -3,6 +3,7 @@
 <head>
     <title>Hamid Karimi</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2f22a90c06.js" crossorigin="anonymous"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -61,6 +62,19 @@
         .hk-portfolio-container {
         }
 
+            .hk-portfolio-container .hk-picture {
+                display: none;
+                text-align: center;
+            }
+
+                .hk-portfolio-container .hk-picture img {
+                    margin: 45px 15px 15px 15px;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    box-shadow: 0 0 5px 0 rgb(255 255 255);
+                }
+
             .hk-portfolio-container .hk-portfolio-pane-left, .hk-portfolio-container .hk-portfolio-pane-right {
             }
 
@@ -97,15 +111,15 @@
                         font-size: 12px;
                     }
 
-                .hk-portfolio-container .hk-portfolio-pane-left section address img {
-                    width: 32px;
-                    vertical-align: middle;
-                    margin-left: 5px;
-                }
+                        .hk-portfolio-container .hk-portfolio-pane-left section address img {
+                            width: 32px;
+                            vertical-align: middle;
+                            margin-left: 5px;
+                        }
 
-                .hk-portfolio-container .hk-portfolio-pane-left section h5 {
-                    font-size: 12px;
-                }
+                    .hk-portfolio-container .hk-portfolio-pane-left section h5 {
+                        font-size: 12px;
+                    }
 
             .hk-portfolio-container .hk-portfolio-pane-right {
                 display: none;
@@ -196,6 +210,19 @@
 
         /*---+---+---+---+---+---*/
 
+        /*landscape*/
+        @media (min-height: 500px) {
+            .hk-portfolio-container .hk-picture {
+                display: block;
+            }
+
+            .hk-portfolio-container .hk-portfolio-pane-left section {
+                padding: 0 30px 30px 30px;
+            }
+        }
+
+        /*---+---+---+---+---+---*/
+
         /*Small devices (landscape phones, 576px and up)*/
         @media (min-width: 576px) {
         }
@@ -207,6 +234,10 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
+            }
+
+            .hk-portfolio-container .hk-picture {
+                display: none;
             }
 
             .hk-portfolio-container .hk-portfolio-pane-left, .hk-portfolio-container .hk-portfolio-pane-right {
@@ -257,6 +288,9 @@
     <div class="stars stars2"></div>
     <div>
         <div class="hk-portfolio-container">
+            <div class="hk-picture">
+                <img src="images/hk.jpg" alt="hamid karimi" />
+            </div>
             <div class="hk-portfolio-pane-left">
                 <section>
                     <h1>Hamid Karimi</h1>
